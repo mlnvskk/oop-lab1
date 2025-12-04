@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application x:Class="lab1_oop_malinovska_sofiia.App"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="PrimaryColor">#6366F1</Color>
+            <Color x:Key="PrimaryDark">#4F46E5</Color>
+            <Color x:Key="BackgroundColor">#0B1020</Color>
+            <Color x:Key="CardColor">#111827</Color>
+            <Color x:Key="BorderColor">#1F2937</Color>
+            <Color x:Key="AccentColor">#22C55E</Color>
+            <Color x:Key="ErrorColor">#F97373</Color>
+            
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="14" />
+                <Setter Property="Padding" Value="18,8" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="0,0,6,0" />
+            </Style>
+            
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#020617" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="PlaceholderColor" Value="#6B7280" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="HeightRequest" Value="32" />
+            </Style>
+            
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="13" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

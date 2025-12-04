@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1-oop-malinovska-sofiia", "lab1-oop-malinovska-sofiia\lab1-oop-malinovska-sofiia.csproj", "{75C9DECC-65C4-4A3B-BA8B-709D98D2BFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1_oop_malinovska_sofiia.Tests", "lab1_oop_malinovska_sofiia.Tests\lab1_oop_malinovska_sofiia.Tests.csproj", "{D2948113-BADD-4D36-8F55-3C084346D5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1-oop-malinovska-sofiia.Parser", "lab1-oop-malinovska-sofiia.Parser\lab1-oop-malinovska-sofiia.Parser.csproj", "{7F9D329E-9AEC-4A59-9EE8-C3200122260D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75C9DECC-65C4-4A3B-BA8B-709D98D2BFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C9DECC-65C4-4A3B-BA8B-709D98D2BFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C9DECC-65C4-4A3B-BA8B-709D98D2BFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C9DECC-65C4-4A3B-BA8B-709D98D2BFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2948113-BADD-4D36-8F55-3C084346D5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2948113-BADD-4D36-8F55-3C084346D5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2948113-BADD-4D36-8F55-3C084346D5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2948113-BADD-4D36-8F55-3C084346D5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F9D329E-9AEC-4A59-9EE8-C3200122260D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9D329E-9AEC-4A59-9EE8-C3200122260D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9D329E-9AEC-4A59-9EE8-C3200122260D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9D329E-9AEC-4A59-9EE8-C3200122260D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

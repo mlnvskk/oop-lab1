@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab1_oop_malinovska_sofiia.MainPage"
+             BackgroundColor="{StaticResource BackgroundColor}">
+
+    <VerticalStackLayout Padding="18" Spacing="14">
+        <Border StrokeThickness="0"
+                BackgroundColor="#111827"
+                Padding="14"
+                StrokeShape="RoundRectangle 18">
+            <VerticalStackLayout Spacing="2">
+                <Label Text="Лабораторна робота №1. Електронна таблиця для аналізу та обчислення виразів"
+                       FontSize="17"
+                       FontAttributes="Bold" />
+                <Label Text="Виконала студентка групи К-25 Маліновська Софія. Варіант 5"
+                       FontSize="13"
+                       TextColor="#9CA3AF" />
+            </VerticalStackLayout>
+        </Border>
+        
+        <Border Stroke="{StaticResource BorderColor}"
+                StrokeThickness="1"
+                BackgroundColor="{StaticResource CardColor}"
+                Padding="10"
+                StrokeShape="RoundRectangle 16">
+            <HorizontalStackLayout Spacing="6">
+                <Button Text="Порахувати"
+                        Clicked="CalculateButton_Clicked" />
+                <Button Text="Вирази"
+                        Clicked="ShowExpressionsButton_Clicked" />
+                <Button Text="Значення"
+                        Clicked="ShowValuesButton_Clicked" />
+                <Button Text="Зберегти"
+                        Clicked="SaveButton_Clicked"/>
+                <Button Text="Довідка"
+                        Clicked="HelpButton_Clicked" />
+                <Button Text="Вийти"
+                        BackgroundColor="#374151"
+                        Clicked="ExitButton_Clicked" />
+            </HorizontalStackLayout>
+        </Border>
+        
+        <Border Stroke="{StaticResource BorderColor}"
+                StrokeThickness="1"
+                BackgroundColor="{StaticResource CardColor}"
+                Padding="8,6"
+                StrokeShape="RoundRectangle 16">
+            <HorizontalStackLayout Spacing="8" VerticalOptions="Center">
+                <Label Text="Статус:"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource AccentColor}" />
+                <Label x:Name="textInput"
+                       Text="Повідомлення про помилки та стан роботи"
+                       TextColor="White"
+                       FontSize="13"
+                       HorizontalOptions="FillAndExpand"
+                       LineBreakMode="TailTruncation" />
+            </HorizontalStackLayout>
+        </Border>
+        
+        <Border Stroke="{StaticResource BorderColor}"
+                StrokeThickness="1"
+                BackgroundColor="{StaticResource CardColor}"
+                Padding="10"
+                StrokeShape="RoundRectangle 18"
+                VerticalOptions="FillAndExpand">
+
+            <VerticalStackLayout Spacing="6">
+                
+                <HorizontalStackLayout Spacing="10" Margin="0,10,0,0">
+                    <Label Text="Рядки:" TextColor="White"/>
+                    <Entry x:Name="rowsEntry"
+                           WidthRequest="50"
+                           Text="10"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="Стовпці:" TextColor="White"/>
+                    <Entry x:Name="colsEntry"
+                           WidthRequest="50"
+                           Text="10"
+                           Keyboard="Numeric"/>
+
+                    <Button Text="Змінити розмір"
+                            Clicked="ResizeButton_Clicked"/>
+                </HorizontalStackLayout>
+
+                <Label Text="Таблиця виразів"
+                       FontAttributes="Bold"
+                       FontSize="14" />
+
+                <ScrollView HorizontalScrollBarVisibility="Always"
+                            VerticalScrollBarVisibility="Always">
+                    <Grid x:Name="grid"
+                          BackgroundColor="#020617"
+                          ColumnSpacing="1"
+                          RowSpacing="1" />
+                </ScrollView>
+
+            </VerticalStackLayout>
+        </Border>
+
+
+    </VerticalStackLayout>
+</ContentPage>
